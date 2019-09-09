@@ -1,7 +1,51 @@
 {% extends 'base.html' %}
 {% import 'macros.html' as macro %}
 
+
+
 {% block content %}
+    <div class="jumbotron">
+        <div class="row">
+            <!-- Logo image -->
+            <div class="col-md-3 logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}">
+            </div>
+            <!-- Site description -->
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                    <div class="col-md-12">
+                        <a href="https://github.com/Hillarydalie">
+                            <img class="featuredimage" src="{{ url_for('static', filename='images/social/github.png') }}">
+                        </a>
+                        <a href="https://twitter.com/Hillarydalie">
+                            <img class="featuredimage" src="{{ url_for('static', filename='images/social/twitter.png') }}">
+                        </a>
+                        <a href="https://wa.me/254726083057">
+                            <img class="featuredimage" src="{{ url_for('static', filename='images/social/whatsapp.png') }}">
+                        </a>
+                        <a href="https://open.spotify.com/user/jkne22gl1t3g486r025hs2jlb?si=wvNWqy6ETDSR9s3jhbLtUw">
+                            <img class="featuredimage" src="{{ url_for('static', filename='images/social/spotify.png') }}">
+                        </a>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid" id="bc">
         <div class="row">
             {{macro.showSources(sources)}} 
