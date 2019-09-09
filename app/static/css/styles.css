@@ -1,0 +1,33 @@
+body {
+    font-family: 'Manjari', sans-serif;
+    background-color: #ff5c5c94;
+}
+
+.col-md-4 {
+    margin: 10px 0px 10px 0px;
+}
+
+.card-footer.text-center {
+    padding: 15px 0px 5px 0px;
+    background-color: whitesmoke;
+}
+
+img.featuredimage {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+h5.card-title.tl {
+    color: #ff5c5c;
+}
+
+a {
+    color: #ff5c5c;
+     text-decoration: none; 
+     background-color: transparent; 
+}
+
+a:hover {
+    color: #ff5c5c;
+}
