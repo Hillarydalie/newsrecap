@@ -58,9 +58,9 @@ def processArticle(headline_list):
     description = newarticle.get('description')
     url = newarticle.get('url')
     urlToImage = newarticle.get('urlToImage')
-    publishedAt = newarticle.get('publishedAt')
+    dateCreated = newarticle.get('dateCreated')
     if urlToImage:
-      article_object = Articles(author,title,description,url,urlToImage,publishedAt)
+      article_object = Article(author,title,description,url,urlToImage,dateCreated)
       source_article.append(article_object)
   return source_article
 
@@ -86,9 +86,9 @@ def ProcessSearch(article_list):
     description = art.get('description')
     url = art.get('url')
     urlToImage = art.get('urlToImage')
-    publishedAt = art.get('publishedAt')
+    dateCreated = art.get('dateCreated')
     if urlToImage:
-      article_object = Articles(author,title,description,url,urlToImage,publishedAt)
+      article_object = Articles(author,title,description,url,urlToImage,dateCreated)
       newSearchReturn.append(article_object)
       
   return newSearchReturn
