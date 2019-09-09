@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+    <div class="container-fluid" id="bc">
+        <div class="row">
+            {{macro.showSources(sources)}} 
+        </div>
+    </div>
+{% endblock %}  
