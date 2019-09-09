@@ -31,3 +31,7 @@ a {
 a:hover {
     color: #ff5c5c;
 }
+
+.card-title {
+    margin-bottom: 0.5rem;
+}
