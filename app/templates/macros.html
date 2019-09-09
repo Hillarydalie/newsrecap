@@ -16,3 +16,25 @@
         </div>
     {%endfor%}
 {%endmacro%}
+
+{%macro displayArticles(headline_list)%}
+    {%for headlines in headline_list %}
+        <div class="col-md-4">
+            <div class="card">
+                    <img class="card-img-top" src="{{headlines.image_url}}">
+                <div class="card-footer text-center">
+                    <a href="{{headlines.article_url}}">
+                        <h5 class="card-title tl"> {{headlines.title}}</h5>
+                    </a>
+                    <p class="card-text">By {{headlines.author}} </p>
+                </div>
+                <div class="card-body">
+                    <p>{{headlines.urlToImage}}</p>
+                    <p class="card-text"> {{headlines.description}} </p>
+                </div>
+                <div class="card-footer">
+                </div>
+            </div>
+        </div>
+    {%endfor%}
+{%endmacro%}
