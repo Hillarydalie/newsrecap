@@ -12,21 +12,21 @@ def home():
   news = getNews()
   return render_template('index.html',sources = news, title = title)
 
-@main.route('/articles')
-def articles():
-  """
-  articles route
-  """
-  article = getSearchItem('programming')
+# @main.route('/articles')
+# def articles():
+#   """
+#   articles route
+#   """
+#   article = getSearchItem('programming')
   
-  return render_template('articles.html',article = article)
+#   return render_template('articles.html',article = article)
 
 
 @main.route('/source/<id>')
 def source(id):
   headlines = getArticles(id)
   source = id
-#   return render_template('articles.html',headlines = headlines , source = source)
+  return render_template('articles.html',headlines = headlines , source = source)
 
 @main.route('/news/highlight')
 def highlight():
