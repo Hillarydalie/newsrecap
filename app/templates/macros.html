@@ -1,0 +1,18 @@
+{%macro showSources(sources_list)%}
+    {%for source in sources_list %}
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-footer text-center">
+                    <a href="/source/{{source.id}}"><h5 class="card-title tl"> {{source.name}} </h5></a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"> {{source.description | truncate(50)}} </p>
+                    <p class="card-text"><small>Category : {{source.category}} </small></p>
+                </div>
+                <div class="card-footer">
+                    <p class="text-muted"><small>Country : {{source.country}} </small> <small>Language : {{source.language}} </small> </p>
+                </div>
+            </div>
+        </div>
+    {%endfor%}
+{%endmacro%}
