@@ -16,7 +16,7 @@ class Devconfig(Config):
   """
   Development configuration child class
   """
-
+  
   DEBUG = True
 
 class Prodconfig(Config):
