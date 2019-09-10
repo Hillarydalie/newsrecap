@@ -12,16 +12,6 @@ def home():
   news = getNews()
   return render_template('index.html',sources = news, title = title)
 
-# @main.route('/articles')
-# def articles():
-#   """
-#   articles route
-#   """
-#   article = getSearchItem('programming')
-  
-#   return render_template('articles.html',article = article)
-
-
 @main.route('/source/<id>')
 def source(id):
   headlines = getArticles(id)

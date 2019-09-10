@@ -9,7 +9,7 @@ class Article:
         self.description = description
         self.article_url = article_url
         self.image_url = image_url
-        self.date_created = date_created
+        self.date_created = date_created    
 
 class Sources:
     """
